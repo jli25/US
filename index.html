@@ -16,12 +16,15 @@
     }
 
     .content-wrapper {
-      width: 100%;
-      max-width: 400px;
+      width: 90%;
+      max-width: 800px;
+      min-width: 320px;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 1rem;
+      padding: 1rem;
+      margin: 0 auto;
     }
 
     .logo {
@@ -48,6 +51,7 @@
       border-radius: 1rem;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       width: 100%;
+      max-width: 400px;
     }
 
     .nav-link {
@@ -82,6 +86,33 @@
     .nav-link svg {
       width: 24px;
       height: 24px;
+    }
+
+    .description {
+      text-align: center;
+      color: #4b5563;
+      line-height: 1.6;
+      margin-top: 1rem;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      box-sizing: border-box;
+      max-width: 65ch;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .content-wrapper {
+        width: 95%;
+        padding: 0.5rem;
+      }
+      
+      .description {
+        padding: 1rem;
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
@@ -123,6 +154,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/></svg>
       </a>
     </div>
+
+    <!-- Description -->
+    <p class="description">
+      "US" is a comprehensive mobile app designed for Chinese international students in the US, focusing on building connections within their academic communities. The app serves as a digital bridge, connecting students through shared experiences, needs, and interests. The community-driven platform enables students to discover nearby peers, events, and facilities, exchange information and physical items, as well as providing and seeking support. Practical tools like real-time translation and budget tracking are seamlessly integrated to address common international student needs. "US" is a verified student-only environment, creating a safe, trusted space where international students can find genuine connections and build their own support networks while navigating life in a new country.
+    </p>
   </div>
 
   <script>
